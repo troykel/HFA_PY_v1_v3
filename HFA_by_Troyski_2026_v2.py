@@ -114,7 +114,7 @@ else:
     # Running as .py script
     SCRIPT_DIR = Path(__file__).parent.resolve()
 
-PREVIEW_IDLE_IMAGE = SCRIPT_DIR / "IMAGES" / "HFA - Colors MOST beautiful when MIXED.png"
+PREVIEW_IDLE_IMAGE = Path(__file__).parent / "IMAGES" / "HFA - Colors MOST beautiful when MIXED.png"
 
 FONT_FAMILY = "Century Gothic UI", "Roboto", "Arial"
 BUTTON_FONT_PT = 18
@@ -2372,34 +2372,30 @@ class MainWindow(QMainWindow):
             self.favorite_button.setText("- Mark as Favorite")
 
     def _show_idle_image(self) -> None:
-        """Show a generated banner preview."""
+        """Show the HFA idle/welcome image in the preview panel."""
         try:
-            # Use reasonable default dimensions (preview label might not be sized yet)
-            width = 1200
-            height = 600
+            if PREVIEW_IDLE_IMAGE.exists():
+                pixmap = QPixmap(str(PREVIEW_IDLE_IMAGE))
+                if pixmap and not pixmap.isNull():
+                    scaled = pixmap.scaled(
+                        self.preview_label.width() or 800,
+                        self.preview_label.height() or 400,
+                        Qt.KeepAspectRatio,
+                        Qt.SmoothTransformation
+                    )
+                    self.preview_label.setPixmap(scaled)
+                    return
 
-            # Generate a beautiful rainbow banner
-            # Use the RAINBOW - LGBTQ+ palette colors
+            # Fallback if PNG missing — generate rainbow gradient
             rainbow_colors = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#0000FF", "#4B0082", "#EE82EE"]
-
-            # Create horizontal gradient banner
-            banner = linear_gradient(width, height, rainbow_colors, "Horizontal")
-
-            # Convert to QPixmap and display
+            banner = linear_gradient(1200, 600, rainbow_colors, "Horizontal")
             pixmap = pil_to_qpixmap(banner)
-
-            # Scale to fit preview label if needed
             if pixmap and not pixmap.isNull():
-                # Scale to reasonable size for display
                 scaled = pixmap.scaled(800, 400, Qt.KeepAspectRatio, Qt.SmoothTransformation)
                 self.preview_label.setPixmap(scaled)
-            else:
-                # If pixmap creation failed, show text
-                self.preview_label.setText("Ready!\n\nPick a palette and click 'Generate Preview'.")
 
         except Exception as e:
-            # Fallback to text if generation fails
-            print(f"Error generating idle banner: {e}")
+            print(f"Error showing idle image: {e}")
             self.preview_label.setText("Ready!\n\nPick a palette and click 'Generate Preview'.")
 
     # Filter change handlers
@@ -3157,7 +3153,7 @@ if __name__ == "__main__":
     from PySide6.QtCore import Qt as QtCore
 
     # Try to load the custom gradient splash image
-    splash_image_path = Path(__file__).parent / "HFA_splash.png"
+    splash_image_path = Path(__file__).parent / "IMAGES" / "HFA_splash.png"
 
     if splash_image_path.exists():
         # Use your beautiful Pansexual gradient!
