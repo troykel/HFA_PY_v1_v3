@@ -1253,11 +1253,24 @@ class ColorWheelDialog(QDialog):
 
     def _on_hex_entered(self):
         text = self.hex_input.text().strip()
-        if not text.startswith("#"):
-            text = "#" + text
+
+        # First try as a named color (e.g. "cornflowerblue", "tomato")
         c = QColor(text)
+
+        # If that didn't work, try adding # and treating as hex
+        if not c.isValid():
+            c = QColor("#" + text)
+
         if c.isValid():
             self._color = c
+            hex_value = c.name().upper()
+
+            # If user typed a name (not a hex), show: "cornflowerblue → #6495ED"
+            if not text.startswith("#"):
+                self.hex_input.setText(f"{text} → {hex_value}")
+            else:
+                self.hex_input.setText(hex_value)
+
             self._refresh_all()
 
     def _on_copy_hex(self):
@@ -2025,6 +2038,17 @@ class MainWindow(QMainWindow):
         self.preview_label.setObjectName("previewLabel")
         right_layout.addWidget(self.preview_label, 1)  # Stretch factor of 1
 
+        self.random_button = QPushButton("🎲  Random Gradient")
+
+        self.random_button.setObjectName("randomButton")
+        self.random_button.setMinimumHeight(44)
+        self.random_button.clicked.connect(self.on_random_clicked)
+        random_layout = QHBoxLayout()
+        random_layout.addStretch()
+        random_layout.addWidget(self.random_button)
+        random_layout.addStretch()
+        right_layout.addLayout(random_layout)
+
         # Button row: Palette Builder + Favorites
         button_row_container = QWidget()
         button_row_layout = QHBoxLayout(button_row_container)
@@ -2146,13 +2170,27 @@ class MainWindow(QMainWindow):
             QPushButton:pressed {{
                 background-color: {button_pressed};
             }}
+            
+            QPushButton#randomButton {{
+                background-color: #3D0070;
+                color: #FFFFFF;
+                font-size: 28px;
+                font-weight: 600;
+                padding: 8px 32px;
+                border-radius: 6px;
+                border: 2px solid #7B2FBE;
+            }}
+            QPushButton#randomButton:hover {{
+                background-color: #5A0099;
+            }}
+            
             #statusLabel {{
                 color: {self.font_color};
             }}
             #hexCodesLabel {{
                 color: {self.font_color};
             }}
-
+            
             /* - Indigo Scrollbars - */
             QScrollBar:vertical {{
                 background: #1a1a2e;
