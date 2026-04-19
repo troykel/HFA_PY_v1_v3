@@ -11,9 +11,12 @@ Thank you for your purchase!
 GETTING STARTED
 --------------------------------------------------------------------------------
 
-1. Right-click the ZIP file you downloaded
+** DO NOT move or delete any files inside this folder.
+** The app needs everything to stay together to work properly.
 
-2. Click "Extract All" or "Unzip"
+1. Right-click the ZIP file you downloaded (A ZIP file is a larger file that is compressed (made smaller), so as to make it faster to send and open.)
+
+2. Click "Extract All" or "Unzip" (Return it to it's normal size)
    When a file is "zipped", it is compressed or shrunk down to a
    smaller size, and it needs to be extracted back
    to it's original size before you can use it.
@@ -26,32 +29,29 @@ GETTING STARTED
 
 6. Enjoy!
 
-
-** DO NOT move or delete any files inside this folder.
-** The app needs everything to stay together to work properly.
-
 --------------------------------------------------------------------------------
 HOW TO USE
 --------------------------------------------------------------------------------
 
 BROWSING PALETTES
    Use the Category dropdown to filter by type (LGBTQ+, Disability, etc.)
+
    Click any palette to see it in gradient form instantly in the preview
 
 RANDOM BUTTON
    Click "Random Palette" for instant inspiration
-   Randomizes palette, direction, and size all at once!
+   Randomizes palette chosen, direction (type of gradient), and size all at once!
 
-CHANGING DIRECTION
+CHANGING THE DIRECTION OR TYPE OF GRADIENT YOU WOULD LIKE TO CREATE
    Use the Direction dropdown to switch between:
    Horizontal, Vertical, Radial, Conical, Spiral, and more
 
-SAVING YOUR GRADIENT
+SAVING YOUR GRADIENT DESIGN
    Set your desired Width and Height
    Click "Save Image"
-   Gradients save to your Downloads\HFA Gradients folder
-   (Inside of the Downloads folder is a folder called "HFA Gradients",
-   and that is where your gradients are saved / stored)
+
+   Gradients are saved to your 'Downloads\HFA Gradients' folder
+   (Inside of the Downloads folder is a folder called "HFA Gradients", and that is where your gradients are saved / stored)
 
 FAVORITES
    Click the star to mark a given palette as one of your favorites
@@ -85,8 +85,9 @@ See LICENSE.txt for full terms.
 
 ================================================================================
 
-                    "Colors are most beautiful when mixed."
+                    "Colors MOST beautiful when MIXED."
+                                 Troyski
 
-                              Enjoy! 
+                                  Enjoy!
                               
 ================================================================================
