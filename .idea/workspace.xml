@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3bbe5b9-fcd4-47d8-845c-4541c02b6102" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HFA_2025.spec" beforeDir="false" afterPath="$PROJECT_DIR$/HFA_by_Troyski_2026_v2.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +29,12 @@
     &quot;assignee&quot;: &quot;troykel&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/troykel/HFA_PY_v1_v3.git",
-    "accountId": "4fa73612-1f23-4473-aa62-a2979c9a8b07"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/troykel/HFA_PY_v1_v3.git&quot;,
+    &quot;accountId&quot;: &quot;4fa73612-1f23-4473-aa62-a2979c9a8b07&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -48,35 +45,35 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.GRADIENT generator.executor": "Run",
-    "Python.HFA - 2025.executor": "Run",
-    "Python.HFA_2025_FIXED.executor": "Run",
-    "Python.HFA_2025_SIMPLE_FIX.executor": "Run",
-    "Python.HFA_ACTUALLY_FIXED.executor": "Run",
-    "Python.HFA_GRADIENT TEST.executor": "Run",
-    "Python.HFA_by_Troyski.executor": "Run",
-    "Python.HFA_by_Troyski_2026_v1.executor": "Run",
-    "Python.HFA_by_Troyski_2026_v1_fixed.executor": "Run",
-    "Python.HFA_by_Troyski_2026_v2.executor": "Run",
-    "Python.HFA_by_Troyski_2026_v3.executor": "Run",
-    "Python.HFA_by_Troyski_AutoPreview.executor": "Run",
-    "Python.HFA_by_Troyski_sRGB.executor": "Run",
-    "Python.HfA.executor": "Run",
-    "Python.HfA_intro release.executor": "Run",
-    "Python.hfa_final.executor": "Run",
-    "Python.hfa_main_updated.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Troy/PycharmProjects/HFA/HFA_2026_Pyside6",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.GRADIENT generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA - 2025.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_2025_FIXED.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_2025_SIMPLE_FIX.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_ACTUALLY_FIXED.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_GRADIENT TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_2026_v1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_2026_v1_fixed.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_2026_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_2026_v3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_AutoPreview.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HFA_by_Troyski_sRGB.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HfA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HfA_intro release.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hfa_final.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hfa_main_updated.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Troy/PycharmProjects/HFA/HFA_2026_Pyside6&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Troy\PycharmProjects\HFA_2025\dist" />

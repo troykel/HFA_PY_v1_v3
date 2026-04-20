@@ -1,6 +1,6 @@
 ================================================================================
                          HUEMANITY FOR ALL
-              A Colorful Celebration of Diversity & Inclusion
+              A Colorful Celebration of Diversity &     Inclusion
                           by Troyski
                            v1.0 (2026)
 ================================================================================
